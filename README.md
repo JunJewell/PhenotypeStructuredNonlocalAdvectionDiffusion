@@ -52,5 +52,6 @@ $$    \frac{\partial u_i(t,\mathbf{x})}{\partial t}
     \right)
     +
     \tilde{\beta}\sum_{j=1}^{N}L_{ij}u_j,$$
+    
 
-is carried out using the method-of-lines, first discretising in space and then integrating the resulting ODEs with an explicit adaptive-timestep Runge Kutta method of order 5(4). The latter is implemented through SciPy's `integrate.solve_ivp` function - see [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) for details. For diffusion and advection terms, standard centred stencils are used throughout. The integral term is calculated using a fast Fourier transform method. Further detail can be found [in this repository](https://github.com/JunJewell/NonlocalReactAdvectDiffuse2D), which uses the same underlying method.
+for $$i=1,\ldots,N$$, is carried out using the method-of-lines, first discretising in space and then integrating the resulting ODEs with an explicit adaptive-timestep Runge Kutta method of order 5(4). The latter is implemented through SciPy's `integrate.solve_ivp` function - see [here](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) for details. For the diffusion term standard centred stencils are used throughout. The integral term is calculated using a fast Fourier transform method. Further detail can be found [in this repository](https://github.com/JunJewell/NonlocalReactAdvectDiffuse2D), which uses the same underlying method.
