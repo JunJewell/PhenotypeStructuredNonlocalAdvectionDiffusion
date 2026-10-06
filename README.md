@@ -13,7 +13,7 @@ The `Videos` folder contains animations from simulations with spatio-temporal be
 
 ### Simulation
 
-- `parent_simulation_class.py`: Abstract base class for simulatin systems with nonlocal movement and diffusion with N species/phenotype-classes. interactions.
+- `parent_simulation_class.py`: Abstract base class for simulating systems with nonlocal movement and diffusion with N species/phenotype-classes. interactions.
 - `nonlocal_gradient_model.py`: Daughter class of above, defining the specific form of the interactions.
 - `create_phenotype_kernel_matrix.py`: Contains functions that define the phenotype interaction matrix used in `nonlocal_gradient_model.py`.
 
