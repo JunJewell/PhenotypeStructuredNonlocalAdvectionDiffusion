@@ -6,7 +6,7 @@ Code to simulate a phenotype structured nonlocal aggregation (nonlocal advection
 
 ## Videos
 
-The `Videos` folder contains animations from simulations with spatio-temporal behaviour, corresponding to figures 8 and 9 in the paper. Each video shows:
+The `Videos` folder contains animations from simulations with spatio-temporal behaviour, corresponding to figures 8 and 9 in the paper.
 
 
 ## Code Structure
