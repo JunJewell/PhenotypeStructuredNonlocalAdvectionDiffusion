@@ -417,9 +417,7 @@ class PhenotypePlotter:
         
         ax.set_xlabel(r"$x$")
         ax.set_ylabel(r"$\int_{V} u(t, x,\theta)\,d\theta$")
-        ax.set_ylabel(r"total population") #debug
-        
-        #ax.set_title(rf"$t={self.solution_t[time_index]:.4g}$")
+        ax.set_ylabel(r"total population") 
         ax.set_ylim(0., 3.)
         ax.set_xlim(0., self.L_x)
         ax.minorticks_off()
@@ -475,7 +473,6 @@ class PhenotypePlotter:
         
         ax.set_xlabel(r"$x$")
         ax.set_ylabel(r"Each $u_i(t,x)$")
-        ax.set_ylabel(r"$\theta$") #debug
         ax.legend(loc="upper left")
         
         #ax.set_title(rf"$t={self.solution_t[time_index]:.4g}$")
@@ -531,7 +528,6 @@ class PhenotypePlotter:
         elif quick_start :
             frame_indices = list(range(0, self.n_time, 10*sample_rate))
         else:
-            #frame_indices = list(range(0, self.n_time, sample_rate)) #debug
             frame_indices = list(range(0, 1001, sample_rate))
     
         n_frames = len(frame_indices)
