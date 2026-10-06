@@ -1,4 +1,4 @@
-# PhenotypeStructuredNonlocalAdvectionDiffusion
+# Phenotype Structured Nonlocal Advection Diffusion Simulations
 
 Code to simulate a phenotype structured nonlocal aggregation (nonlocal advection diffusion) system, with one phenotype dimension and one physical space dimension. See the paper [[here]] for details of the model and theory. 
 
